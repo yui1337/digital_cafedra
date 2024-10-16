@@ -1,0 +1,63 @@
+body {
+    background-color: peachpuff;
+    font-family: 'Montserrat', sans-serif;
+    color: sienna;
+    font-size: 16px;
+    background
+}
+
+h1, h2, h3 {
+    font-size: 28px;
+    margin: 10px 30px 10px 30px;
+    text-align: center;
+}
+
+ul, ol, p { 
+    margin: 1%;
+}
+
+a {
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin: 0% 1% 0% 1%;
+    background-color: peachpuff;
+}
+
+.content-right{
+    width: 50%;
+    margin-left: 1%;
+    padding: 0% 1% 1% 1%;
+    background-color: mistyrose;
+    border: 4px double sienna;
+    border-radius: 30px;
+}
+
+.content-left{
+    width: 50%;
+    margin-right: 1%;
+    padding: 0% 1% 1% 1%;
+    background-color: mistyrose;
+    border: 4px double sienna;
+    border-radius: 30px;
+}
+
+.my_image {
+    object-fit: contain;
+    max-width: 90%;
+    height: auto; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    text-align: center;
+}
+
+
