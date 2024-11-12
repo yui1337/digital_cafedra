@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О киноактёре</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-offset="50">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand " href="#">Райан Гослинг</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="info.html">О актёре</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="films.html">Фильмы</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Боковое меню -->
+<nav id="sidebar" class="navbar navbar-dark bg-dark flex-column p-3">
+    <a class="navbar-brand" href="#">Меню</a>
+    <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+            <a class="nav-link" href="#carousel">Карусель</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#infoButton">Информация об актёре</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#films">Карточки с фильмами</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Основное содержимое -->
+<div class="content" style="margin-left: 2%;">
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel" style="max-width: 80%; margin-top: 5%; margin: auto;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/gosling1.webp" alt="Первый слайд" style="object-fit: contain; height: 400px;">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/gosling2.jpg" alt="Второй слайд" style="object-fit: contain; height: 400px;">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/gosling3.webp" alt="Третий слайд" style="object-fit: contain; max-height: 400px;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <button class="btn btn-info my-4" type="button" id="infoButton" data-bs-toggle="collapse" data-bs-target="#actorInfo" aria-expanded="false" aria-controls="actorInfo">
+        Немного информации о Райане Гослинге
+    </button>
+    <div class="collapse" id="actorInfo">
+        <div class="card card-body">
+            <strong>Родился: Райан Томас Гослинг родился 12 ноября 1980 года в канадском городе Лондон, провинция Онтарио.</strong><br>
+            <strong>Учился: Получил образование в Gladstone Public School, Cornwall Collegiate и Lester B. Pearson High School.</strong><br>
+            <strong>Личная жизнь: Райан в отношениях с Евой Мендес с 2011 года. У пары две дочери.</strong>
+        </div>
+    </div>
+
+    <div id="films" class="row row-cols-1 row-cols-md-3 g-4 my-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/poster1.jpg" class="card-img-top" alt="Постер фильма 1">
+                <div class="card-body">
+                    <h5 class="card-title">Драйв (Drive)</h5>
+                    <p class="card-text">Великолепный водитель – при свете дня он выполняет каскадерские трюки на съёмочных площадках Голливуда,
+                         а по ночам ведет рискованную игру. Но один опасный контракт – и за его жизнь назначена награда. Теперь, чтобы остаться 
+                         в живых и спасти свою очаровательную соседку, он должен делать то, что умеет лучше всего – виртуозно уходить от погони.</p>
+                    <a href="https://www.kinopoisk.ru/film/276598" class="btn btn-primary" target="_blank">Страница на Кинопоиске</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/poster2.jpg" class="card-img-top" alt="Постер фильма 2">
+                <div class="card-body">
+                    <h5 class="card-title">Бегущий по лезвию 2049 (Blade Runner 2049)</h5>
+                    <p class="card-text">В недалеком будущем мир населен людьми и репликантами, созданными выполнять самую тяжелую работу. Работа 
+                        офицера полиции Кей — держать репликантов под контролем в условиях нарастающего напряжения. Он случайно становится
+                         обладателем секретной информации, которая ставит под угрозу существование всего человечества. Желая найти ключ к разгадке,
+                          Кей решает разыскать Рика Декарда — бывшего офицера специального подразделения полиции Лос-Анджелеса, который бесследно 
+                          исчез много лет назад.</p>
+                    <a href="https://www.kinopoisk.ru/film/589290/" class="btn btn-primary" target="_blank">Страница на Кинопоиске</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/poster3.webp" class="card-img-top" alt="Постер фильма 3">
+                <div class="card-body">
+                    <h5 class="card-title">Барби (Barbie)</h5>
+                    <p class="card-text">Самая обыкновенная стереотипная Барби живёт в великолепном розовом Барбиленде, и каждый её день идеален.
+                         Она меняет наряды, загорает на пляже, проводит время с другими Барби, день заканчивается шумной вечеринкой с танцами, и 
+                         в этой позитивной кутерьме с блёстками влюблённый Кен — всего лишь приложение к Барби. Однажды куклу посещают мысли о 
+                         смерти, и её сделанные под туфли с каблуками ноги вдруг становятся плоскими. Чтобы разобраться в происходящем и вернуть
+                          привычный пластмассовый мир, Барби придётся отправиться в мир реальный и найти там свою девочку-хозяйку. За ней
+                           увязывается не мыслящий жизни без своего кумира Кен.</p>
+                    <a href="https://www.kinopoisk.ru/film/3/" class="btn btn-primary" target="_blank">Страница на Кинопоиске</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
