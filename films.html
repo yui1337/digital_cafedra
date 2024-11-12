@@ -1,41 +1,234 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фильмы актёра</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Киноактёр</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="info.html">О актёре</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="films.html">Фильмы</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="info.html">Fan-page Райана Гослинга</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="info.html">О актёре</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="films.html">Фильмы</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <h1>Райан Гослинг</h1>
+                <p>Полное имя - Райан Томас Гослинг. Родился 12 ноября 1980 года в Лондоне, Онтарио, Канада. <strong>Сегодня </strong> 
+                (когда я делаю эту страничку) <strong> празднует день рождения! </strong> Ему исполнилось 44 года. За свою долгую карьеру 
+                (1990 г. - н.в.) успел принять участие в 124 кинокартинах. Из них в 56 как актёр. Гослинг снимается в фильмах самых разных 
+                жанров, среди них драма, криминал, комедия, боевик, триллер, фантастика и др. </p>
+
+                <div class="row">
+                    <div class="col-sm-12 mx-auto" style="width: 100%;">
+                        <h1>Интересные факты</h1>
+                        <ul>
+                            <li><strong>Оскар:</strong> Номинации за фильмы «Ла-Ла Ленд» и «Полу-Нельсон».</li>
+                            <li><strong>Любимое блюдо:</strong> Суши.</li>
+                            <li><strong>Интересный факт:</strong> Гослинг был участником Клуба Микки Мауса и начинал карьеру вместе с Джастином Тимберлейком.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <img src="images/gosling.avif" style="object-fit: scale-down; max-width: 100%; border-radius: 0.375em; border-width: 1px; border-color: transparent;">
+            </div>
         </div>
-    </div>
-</nav>
 
-<div class="container">
-    <!-- Alert -->
-    <div class="alert alert-warning my-4" role="alert">
-        Страница находится в разработке. Пожалуйста, зайдите позже!
-    </div>
-</div>
+        <div class="row">
+            <div class="col-3 vh-75 mt-3" style="min-width: 240px;">
+                <div class="card">
+                    <img src="images/poster4.webp" class="card-img-top" alt="Постер фильма 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Славные парни (The Nice Guys)</h5>
+                        <a href="https://www.kinopoisk.ru/film/841152/" class="btn btn-primary" target="_blank">Страница на Кинопоиске</a>
+                    </div>
+                </div>
+            </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-E7oA7p2ZW1P3ms5I0XYYf8g6ml4XOWzOnyCW1yY6y8Ot7uoEM+pJmXyD9ioEdj/j" crossorigin="anonymous"></script>
+            <div class="col-3 vh-75" style="min-width: 240px; margin-top: 1%">
+                <div class="card">
+                    <img src="images/poster5.webp" class="card-img-top" alt="Постер фильма 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Ла Ла Ленд (La La Land)</h5>
+                        <a href="https://www.kinopoisk.ru/film/841081/" class="btn btn-primary" target="_blank">Страница на Кинопоиске</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 vh-75" style="min-width: 240px; margin-top: 1%">
+                <div class="card">
+                    <img src="images/poster6.webp" class="card-img-top" alt="Постер фильма 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Только бог простит (Only God Forgives)</h5>
+                        <a href="https://www.kinopoisk.ru/film/504288" class="btn btn-primary" target="_blank">Страница на Кинопоиске</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 vh-75" style="min-width: 240px; margin-top: 1%">
+                <div class="card">
+                    <img src="images/poster7.webp" class="card-img-top" alt="Постер фильма 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Мартовские иды (The Ides of March)</h5>
+                        <a href="https://www.kinopoisk.ru/film/462482/" class="btn btn-primary" target="_blank">Страница на Кинопоиске</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 vh-75" style="min-width: 240px; margin-top: 1%">
+                <div class="card">
+                    <img src="images/poster8.webp" class="card-img-top" alt="Постер фильма 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Фанатик (The Believer)</h5>
+                        <a href="https://www.kinopoisk.ru/film/607" class="btn btn-primary" target="_blank">Страница на Кинопоиске</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 vh-75" style="min-width: 240px; margin-top: 1%">
+                <div class="card">
+                    <img src="images/poster2.jpg" class="card-img-top" alt="Постер фильма 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Бегущий по лезвию 2049</h5>
+                        <a href="https://www.kinopoisk.ru/film/276598" class="btn btn-primary" target="_blank">Страница на Кинопоиске</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 vh-75" style="min-width: 240px; margin-top: 1%">
+                <div class="card">
+                    <img src="images/poster1.jpg" class="card-img-top" alt="Постер фильма 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Драйв</h5>
+                        <a href="https://www.kinopoisk.ru/film/276598" class="btn btn-primary" target="_blank">Страница на Кинопоиске</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 vh-75" style="min-width: 240px; margin-top: 1%">
+                <div class="card">
+                    <img src="images/poster3.webp" class="card-img-top" alt="Постер фильма 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Барби</h5>
+                        <a href="https://www.kinopoisk.ru/film/276598" class="btn btn-primary" target="_blank">Страница на Кинопоиске</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-9 mx-auto">
+                <h1 class="text-center ">Фильмография</h1>
+                <table class="table table-bordered table-hover table-striped text-center">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Год</th>
+                            <th>Русское название</th>
+                            <th>Оригинальное название</th>
+                            <th>Роль</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2001</td>
+                            <td>Фанатик</td>
+                            <td>The Believer</td>
+                            <td>Дэнни Балинт</td>
+                        </tr>
+                        <tr>
+                            <td>2004</td>
+                            <td>Дневник памяти</td>
+                            <td>The Notebook</td>
+                            <td>Ной Калхаун</td>
+                        </tr>
+                        <tr>
+                            <td>2007</td>
+                            <td>Ларс и настоящая девушка</td>
+                            <td>Lars and the Real Girl</td>
+                            <td>Ларс Линдстром</td>
+                        </tr>
+                        <tr>
+                            <td>2010</td>
+                            <td>Валентинка</td>
+                            <td>Blue Valentine</td>
+                            <td>Дин Перейра</td>
+                        </tr>
+                        <tr>
+                            <td>2011</td>
+                            <td>Драйв</td>
+                            <td>Drive</td>
+                            <td>Водитель</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">2011</td>
+                            <td>Эта дурацкая любовь</td>
+                            <td>Crazy, Stupid, Love</td>
+                            <td>Джейкоб Палмер</td>
+                        </tr>
+                        <tr>
+                            <td>Только бог простит</td>
+                            <td>Only God Forgives</td>
+                            <td>Джулиан</td>
+                        </tr>
+                        <tr>
+                            <td>2016</td>
+                            <td>Ла-Ла Ленд</td>
+                            <td>La La Land</td>
+                            <td>Себастьян</td>
+                        </tr>
+                        <tr>
+                            <td>2017</td>
+                            <td>Бегущий по лезвию 2049</td>
+                            <td>Blade Runner 2049</td>
+                            <td>Кей</td>
+                        </tr>
+                        <tr>
+                            <td>2018</td>
+                            <td>Человек на Луне</td>
+                            <td>First Man</td>
+                            <td>Нил Армстронг</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>Серый человек</td>
+                            <td>The Gray Man</td>
+                            <td>Шестёрка</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>Барби</td>
+                            <td>Barbie</td>
+                            <td>Кен</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-E7oA7p2ZW1P3ms5I0XYYf8g6ml4XOWzOnyCW1yY6y8Ot7uoEM+pJmXyD9ioEdj/j"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
