@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 500%;
+    height: 300%;
 }
 a{
     text-decoration: none;
@@ -71,7 +71,8 @@ a:hover{
 .content{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 1rem;
     height: 70%;
     width: 90%;
     margin-top: 5%;
@@ -79,29 +80,82 @@ a:hover{
 }
 
 .main_desc{
-    grid-column: 1 / 6;
-    grid-row: 1 / 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
     background-color: rgba(0, 255, 224, 0.5);
-    padding: 10%;
+    padding: 2%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    ". . ."
+    " p p p"
+    " . . .";
 }
-
-.main_desc_text{
-    background-color: #b20808;
+.main_desc p{
+    grid-area: p;
+    
 }
-.desc_image{
-    grid-column: 5 / 11;
-    grid-row: 1 / 2;
-    max-width: 100%;
-    max-height: 50%;
-    z-index: 1;
-    background-color: #b20808;
-}
-
-.desc_image_jpg {
-    max-width: 100%;
-    max-height: 50%;
-    object-fit: contain; /* или "cover" в зависимости от желаемого результата */
+.desc_image  {
+    grid-column: 5/11;
+    grid-row-start: 1;
+    grid-row-end: 2;
     overflow: hidden;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+.desc_image img {
+    object-fit: contain;
+}
+
+.review_section{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 0.25fr;
+}
+.review_1{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.review_padding_1{
+    text-align: center;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    background-color: rgba(0, 255, 224, 0.5);
+    border-radius: 15px;
+}
+
+.avatar_1{
+    height: 30%;
+}
+.avatar_1 img{
+    max-height: 100%;
+    width: auto;
+    display: block;
+    object-fit: contain;
+    clip-path: circle(31.1% at 48% 37%);
+}
+.review_text_1{
+    height: 70%;
+}
+
+.review_2{
+    grid-column: 2/3;
+}
+
+.review_3{
+    grid-column: 3/4;
 }
 
 .footer{
